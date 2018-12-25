@@ -1,0 +1,26 @@
+import React, {Component} from 'react';
+
+import './Footer.css'
+
+let year = 2018;
+
+class Footer extends Component{
+
+    render() {
+        return (
+            <div id="footer-wrapper" className=" ">
+                <div className="media">
+                    media
+                </div>
+                <div>
+
+                </div>
+                <div className="copyright">
+                    <h>Copyright ©  {year}  EazyTrip Inc. All rights reserved.</h>
+                </div>
+            </div>
+        );
+    }
+}
+
+export default Footer;

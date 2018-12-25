@@ -1,0 +1,10 @@
+#navbar-wrapper {
+    top: 0;
+    position: fixed;
+}
+
+.App-logo {
+
+    height: 90px;
+    width: 90px;
+}
