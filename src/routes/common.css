@@ -1,4 +1,25 @@
 
+
+#TitleBar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+#Logo {
+    display: inline;
+    vertical-align: middle;
+    width: 8.6vmax;
+    animation: switch, 2s, linear, 0s, infinite, alternate;
+}
+#HomeTitle {
+    color: #dcdcdc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 7.2vmax;
+    font-weight: bolder;
+    display: inline;
+    vertical-align: middle;
+}
+
 .normal {
     font-family: Georgia, sans-serif;
     margin-top: 3em;

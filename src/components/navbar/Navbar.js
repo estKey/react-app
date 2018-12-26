@@ -1,19 +1,29 @@
 import React, {Component} from 'react';
+import { Row, Col } from 'antd';
 
 import './Navbar.css'
 import logo from '../../logo.svg';
+
 
 class Navbar extends Component{
 
     render() {
         return (
-            <section id="navbar-wrapper">
-                <div className="banner">
-                    <img src={logo} className="App-logo" alt="logo" />
-                    Eazy Trip
-                </div>
-                nav bar
-            </section>
+            <div id="navbar-wrapper">
+                <Row>
+                    <Col span={18} push={6} className="banner">
+                        <section className="banner">
+                            <img src={logo} className="App-logo" alt="logo" />
+                            <div>
+                                EazyTrip
+                            </div>
+                        </section>
+                    </Col>
+                    <Col span={6} pull={18} >
+                        content
+                    </Col>
+                </Row>
+            </div>
         );
     }
 }

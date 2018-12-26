@@ -1,11 +1,22 @@
 #navbar-wrapper {
     top: 0;
+    width: 100%;
     position: fixed;
-    background-color: transparent;
+    background-color: revert;
+    color: revert;
+}
+
+.banner {
+    left: 0;
+    float: left;
+    position: fixed;
+    text-align-all: center;
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: bolder, serif;
 }
 
 .App-logo {
-
-    height: 90px;
-    width: 90px;
+    height: 100%;
+    width: 100%;
 }
