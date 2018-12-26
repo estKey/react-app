@@ -8,7 +8,7 @@ class Footer extends Component{
 
     render() {
         return (
-            <div id="footer-wrapper" className=" ">
+            <div id="footer-wrapper" className="ez-footer">
                 <div className="media">
                     media
                 </div>

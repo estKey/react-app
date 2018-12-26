@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
+import RouterConfig from "./routes/router-config";
 
 class App extends Component {
   render() {
@@ -16,7 +17,7 @@ class App extends Component {
               header
             </header>
             <div className="App-body">
-              body
+              <RouterConfig/>
             </div>
             <footer className="App-footer">
               <Footer/>

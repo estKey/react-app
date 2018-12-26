@@ -1,5 +1,6 @@
 #footer-wrapper{
-
+    color: white;
+    background-color: #282c34;
 }
 
 .media {
@@ -7,5 +8,7 @@
 }
 
 .copyright {
+    align-content: center;
+    text-align: center;
 
 }
