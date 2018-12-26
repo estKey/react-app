@@ -30,7 +30,7 @@ html,body,div{
 }
 
 .App-footer {
-
+  bottom: 0;
 }
 
 .App-link {

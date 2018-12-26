@@ -1,9 +1,9 @@
 import React from 'react'
 
-function AboutPage() {
+function RegisterPage() {
     return (
-        <div className=" ">
-            <h1 className=" ">Yay! Welcome to About!</h1>
+        <div className="Register">
+            <h1 className=" ">Yay! Welcome to Register!</h1>
             <div className=" " />
             <ul className=" ">
                 <li>To get started, edit <code>src/index.js</code> and save to reload.</li>
@@ -13,7 +13,7 @@ function AboutPage() {
     );
 }
 
-AboutPage.propTypes = {
+RegisterPage.propTypes = {
 };
 
-export default AboutPage;
+export default RegisterPage;

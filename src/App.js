@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router} from 'react-router-dom';
-import logo from './logo.svg';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
-import Footer from "./components/footer/Footer";
-import Navbar from "./components/navbar/Navbar";
-import RouterConfig from "./routes/router-config";
+import IndexPage from "./routes/IndexPage";
 
 class App extends Component {
   render() {
@@ -12,16 +9,7 @@ class App extends Component {
         <body>
         <Router>
           <div className="App">
-            <header className="App-header">
-              <Navbar/>
-              header
-            </header>
-            <div className="App-body">
-              <RouterConfig/>
-            </div>
-            <footer className="App-footer">
-              <Footer/>
-            </footer>
+              <Route path="/" exact component={IndexPage}/>
           </div>
         </Router>
         </body>
