@@ -7,10 +7,13 @@ class Navbar extends Component{
 
     render() {
         return (
-            <div id="navbar-wrapper">
-                <img src={logo} className="App-logo" alt="logo" />
+            <section id="navbar-wrapper">
+                <div className="banner">
+                    <img src={logo} className="App-logo" alt="logo" />
+                    Eazy Trip
+                </div>
                 nav bar
-            </div>
+            </section>
         );
     }
 }

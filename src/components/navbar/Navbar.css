@@ -1,6 +1,7 @@
 #navbar-wrapper {
     top: 0;
     position: fixed;
+    background-color: transparent;
 }
 
 .App-logo {

@@ -26,11 +26,17 @@ html,body,div{
 }
 
 .App-body {
+  background-color: aliceblue;
 
 }
 
 .App-footer {
+  background-color: #282c34;
   bottom: 0;
+  position: page;
+}
+.App-footer.div {
+  min-height: 0;
 }
 
 .App-link {

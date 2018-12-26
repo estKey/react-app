@@ -4,7 +4,7 @@ import './Footer.css'
 
 let year = 2018;
 
-class Footer extends Component{
+class FooterContent extends Component{
 
     render() {
         return (
@@ -23,4 +23,4 @@ class Footer extends Component{
     }
 }
 
-export default Footer;
+export default FooterContent;
