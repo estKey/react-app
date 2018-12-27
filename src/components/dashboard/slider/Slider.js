@@ -26,11 +26,20 @@ const context = [
 
 class Slider extends Component{
     render() {
+        const size = "100%";
+        const altTag = [
+            label[0],
+            label[1],
+            label[2],
+            label[3],
+        ];
         return (
             <div id="slider-wrapper" className=" ">
                 <Carousel pauseOnHover={true}>
                     <Carousel.Item>
-                        <img width="100%" height="100%" alt="900x500" src={path[0]} />
+                        <div className="img-wrapper">
+                            <img width={size} height={size} alt={altTag} src={path[0]} />
+                        </div>
                         <Carousel.Caption>
                             <div className="caption-wrapper">
                                 <h3>{label[0]}</h3>
@@ -39,7 +48,9 @@ class Slider extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img width="100%" height="100%" alt="900x500"  src={path[1]} />
+                        <div className="img-wrapper">
+                            <img width={size} height={size} alt={altTag}  src={path[1]} />
+                        </div>
                         <Carousel.Caption>
                             <div className="caption-wrapper">
                                 <h3>{label[1]}</h3>
@@ -48,7 +59,9 @@ class Slider extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img width="100%" height="100%" alt="900x500"  src={path[2]} />
+                        <div className="img-wrapper">
+                            <img width={size} height={size} alt={altTag}  src={path[2]} />
+                        </div>
                         <Carousel.Caption>
                             <div className="caption-wrapper">
                                 <h3>{label[2]}</h3>
@@ -57,7 +70,9 @@ class Slider extends Component{
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img width="100%" height="100%" alt="900x500"  src={path[3]} />
+                        <div className="img-wrapper">
+                            <img width={size} height={size} alt={altTag}  src={path[3]} />
+                        </div>
                         <Carousel.Caption>
                             <div className="caption-wrapper">
                                 <h3>{label[3]}</h3>
