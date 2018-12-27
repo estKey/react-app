@@ -4,6 +4,7 @@
     width: 100%;
     position: fixed;
     background: #282c34;
+    display: block;
     color: revert;
 }
 
@@ -20,4 +21,13 @@
 .App-logo {
     height: 7vmax;
     width: 7vmax;
+}
+
+.title {
+    height: inherit;
+    text-align: center;
+}
+
+.NavLink-active{
+    color: gainsboro;
 }

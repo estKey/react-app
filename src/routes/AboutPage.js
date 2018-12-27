@@ -2,7 +2,7 @@ import React from 'react'
 
 function AboutPage() {
     return (
-        <div className=" ">
+        <div id="About" style={{display:"inline-block"}}>
             <h1 className=" ">Yay! Welcome to About!</h1>
             <div className=" " />
             <ul className=" ">

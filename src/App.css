@@ -1,19 +1,22 @@
 html,body,div{
   min-height: 100%;
-  min-width: 100%;
   height: 100%;
-  width: 100%;
 }
 * {
   margin: 0;
   padding: 0;
 }
 .App {
+  display: block;
   text-align: center;
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
+}
+.App-body {
+  background-color: aliceblue;
+  overflow: hidden;
 }
 .App-header {
   background-color: #282c34;
@@ -24,10 +27,6 @@ html,body,div{
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-.App-body {
-  background-color: aliceblue;
-
 }
 .App-footer {
   background-color: #282c34;
@@ -48,3 +47,4 @@ html,body,div{
     transform: rotate(360deg);
   }
 }
+
