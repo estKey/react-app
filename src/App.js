@@ -10,6 +10,7 @@ import RegisterPage from "./routes/users/RegisterPage";
 import AboutPage from "./routes/AboutPage";
 //Components
 import Navbar from "./components/layout/navbar/Navbar";
+import UserPage from "./routes/users/UserPage";
 
 class App extends Component {
   render() {
@@ -23,10 +24,11 @@ class App extends Component {
                 <Switch>
                     <Route path="/" exact component={IndexPage} />
                     <Route path="/404" exact component={NotFoundPage} />
-                    <Route path="/login" exact component={LoginPage} />
-                    <Route path="/register" exact component={RegisterPage} />
+                    <Route path="/user" exact component={UserPage} />
+                    <Route path="/user/login" exact component={LoginPage} />
+                    <Route path="/user/register" exact component={RegisterPage} />
                     <Route path="/about" exact component={AboutPage} />
-                    <Redirect to="/404" />
+                    <Redirect from="*" to="/404/" />
                 </Switch>
             </div>
             </body>
