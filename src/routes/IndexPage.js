@@ -53,7 +53,7 @@ export default function IndexPage(){
                     <section id="VLog">
                         <NavLink to="/vlog" activeClassName="NavLink-active"> vlog</NavLink>
                     </section>
-                    <section id="AboutID">
+                    <section id="About">
                         <Route path="/about" exact component={AboutPage} />
                     </section>
                 </Layout>
