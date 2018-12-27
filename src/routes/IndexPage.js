@@ -6,6 +6,7 @@ import FooterContent from "../components/layout/footer/FooterContent";
 import TagButton from "../components/buttons/TagButton";
 import {randSentence} from "../components/dashboard/mock/MockContent";
 import AboutPage from "./AboutPage";
+import Slider from "../components/dashboard/slider/Slider";
 
 const {
     Header, Footer, Sider, Content,
@@ -14,21 +15,21 @@ const {
 let mockcontent= randSentence(2);
 const title = "EazyTrip";
 export default function IndexPage(){
+    function scrolltoId(id) {
+        document.getElementById(id).scrollIntoView()
+    }
+
     return (
+        <body>
         <div id="Index" style={{height:"100%",display:"block"}}>
             <Layout style={{height:"100%"}}>
                 <Header style={{height:"100%"}} className="App-header">
                     <div className="App-header header-content">
-                        <section id="TitleBar">
-                            <div id="HomeTitle"
-                                 onClick="document.getElementById('About').scrollIntoView()">
-                                {title}
-                            </div>
-                        </section>
+                        <Slider />
                     </div>
                 </Header>
                 <Layout className="App-body">
-                    <section>
+                    <section id={title}>
                         <Layout>
                             <Sider>
                                 <div>
@@ -50,10 +51,9 @@ export default function IndexPage(){
                         </Layout>
                     </section>
                     <section id="VLog">
-                        <NavLink to="/vlog" activeClassName="NavLink-active">to About</NavLink>
-                        Vlog
+                        <NavLink to="/vlog" activeClassName="NavLink-active"> vlog</NavLink>
                     </section>
-                    <section id="About">
+                    <section id="AboutID">
                         <Route path="/about" exact component={AboutPage} />
                     </section>
                 </Layout>
@@ -64,7 +64,9 @@ export default function IndexPage(){
                 </section>
             </Layout>
         </div>
+        </body>
     );
+
 }
 
 IndexPage.propTypes = {

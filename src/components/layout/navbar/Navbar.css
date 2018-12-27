@@ -5,7 +5,7 @@
     position: fixed;
     background: #282c34;
     display: block;
-    color: revert;
+    color: dimgray;
 }
 
 .banner {
@@ -30,4 +30,11 @@
 
 .NavLink-active{
     color: gainsboro;
+}
+
+a {
+    color: gainsboro;
+    -webkit-transition: 0.4s linear;
+    transition: 0.4s linear;
+    text-decoration: blink;
 }

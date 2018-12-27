@@ -39,6 +39,9 @@ html,body,div{
 .App-link {
   color: #61dafb;
 }
+.header-content {
+  width: 100%;
+}
 @keyframes Loading-spinner {
   from {
     transform: rotate(0deg);

@@ -15,7 +15,7 @@ class Slider extends Component{
     render() {
         return (
             <div id="slider-wrapper" className=" ">
-                <Carousel>
+                <Carousel pauseOnHover={true}>
                     <Carousel.Item>
                         <img width={900} height={500} alt="900x500" src={{path}+wrappers[0]} />
                         <Carousel.Caption>
@@ -34,6 +34,13 @@ class Slider extends Component{
                         <img width={900} height={500} alt="900x500"  src={{path}+wrappers[2]} />
                         <Carousel.Caption>
                             <h3>Third slide label</h3>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img width={900} height={500} alt="900x500"  src={{path}+wrappers[3]} />
+                        <Carousel.Caption>
+                            <h3>Forth slide label</h3>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                         </Carousel.Caption>
                     </Carousel.Item>
