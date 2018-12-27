@@ -1,8 +1,9 @@
 #navbar-wrapper {
     top: 0;
+    min-height: max-content;
     width: 100%;
     position: fixed;
-    background-color: revert;
+    background: #282c34;
     color: revert;
 }
 
@@ -12,11 +13,11 @@
     position: fixed;
     text-align-all: center;
     font-weight: bolder;
-    font-size: x-large;
-    font-family: bolder, serif;
+    font-size: 2vmax;
+    color: gainsboro;
 }
 
 .App-logo {
-    height: 100%;
-    width: 100%;
+    height: 7vmax;
+    width: 7vmax;
 }

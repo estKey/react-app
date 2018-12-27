@@ -4,21 +4,17 @@ html,body,div{
   height: 100%;
   width: 100%;
 }
-
 * {
   margin: 0;
   padding: 0;
 }
-
 .App {
   text-align: center;
 }
-
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100%;
@@ -29,12 +25,10 @@ html,body,div{
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-body {
   background-color: aliceblue;
 
 }
-
 .App-footer {
   background-color: #282c34;
   bottom: 0;
@@ -43,11 +37,9 @@ html,body,div{
 .App-footer.div {
   min-height: 0;
 }
-
 .App-link {
   color: #61dafb;
 }
-
 @keyframes Loading-spinner {
   from {
     transform: rotate(0deg);
