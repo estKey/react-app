@@ -1,5 +1,5 @@
 #Slider {
-    
+
 }
 
 .slider-wrapper {
@@ -41,7 +41,7 @@ img {
     max-height: 500%;
     max-width: 500%;
     overflow: hidden;
-    background-size: auto auto;
+    background-size: 100% 100%;
     background-attachment: fixed;
 }
 

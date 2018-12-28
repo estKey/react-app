@@ -29,55 +29,53 @@ class Slider extends Component{
     render() {
         const size = "100%";
         const altTag = [
-            label[0],
-            label[1],
-            label[2],
-            label[3],
+            null
         ];
+        let index=0;
         return (
             <div id="Slider" className="slider-wrapper">
                 <Carousel pauseOnHover={true}>
                     <Carousel.Item>
-                        <div className="img-wrapper">
-                            <img width={size} height={size} alt={altTag} src={path[0]} />
+                        <div className="img-wrapper" >
+                            <img width={size} height={size} alt={altTag} src={""} style={{"background-image": "url("+path[index]+")"}} />
                         </div>
                         <Carousel.Caption>
                             <div className="caption-wrapper">
-                                <h3>{label[0]}</h3>
-                                <p>{context[0]}</p>
+                                <h3>{label[index]}</h3>
+                                <p>{context[index++]}</p>
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <div className="img-wrapper">
-                            <img width={size} height={size} alt={altTag}  src={path[1]} />
+                            <img width={size} height={size} alt={altTag} src={""} style={{"background-image": "url("+path[index]+")"}} />
                         </div>
                         <Carousel.Caption>
                             <div className="caption-wrapper">
-                                <h3>{label[1]}</h3>
-                                <p>{context[1]}</p>
+                                <h3>{label[index]}</h3>
+                                <p>{context[index++]}</p>
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <div className="img-wrapper">
-                            <img width={size} height={size} alt={altTag}  src={path[2]} />
+                            <img width={size} height={size} alt={altTag} src={""} style={{"background-image": "url("+path[index]+")"}} />
                         </div>
                         <Carousel.Caption>
                             <div className="caption-wrapper">
-                                <h3>{label[2]}</h3>
-                                <p>{context[2]}</p>
+                                <h3>{label[index]}</h3>
+                                <p>{context[index++]}</p>
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <div className="img-wrapper">
-                            <img width={size} height={size} alt={altTag}  src={path[3]} />
+                            <img width={size} height={size} alt={altTag} src={""} style={{"background-image": "url("+path[index]+")"}} />
                         </div>
                         <Carousel.Caption>
                             <div className="caption-wrapper">
-                                <h3>{label[3]}</h3>
-                                <p>{context[3]}</p>
+                                <h3>{label[index]}</h3>
+                                <p>{context[index]}</p>
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>

@@ -8,9 +8,9 @@ import NotFoundPage from "./routes/NotFoundPage";
 import LoginPage from "./routes/users/LoginPage";
 import RegisterPage from "./routes/users/RegisterPage";
 import AboutPage from "./routes/AboutPage";
+import UserPage from "./routes/users/UserPage";
 //Components
 import Navbar from "./components/layout/navbar/Navbar";
-import UserPage from "./routes/users/UserPage";
 
 class App extends Component {
   render() {

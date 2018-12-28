@@ -20,7 +20,8 @@
     vertical-align: middle;
 }
 .Nav-panel {
-
+    width: 100%;
+    position: fixed;
 }
 .normal {
     font-family: Georgia, sans-serif;

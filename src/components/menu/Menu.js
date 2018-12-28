@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import menuItem from 'menuItem'
+import MenuItem from './MenuItem'
 import '../layout/navbar/Navbar.css'
 
 const routepath = [
@@ -22,10 +22,10 @@ class Menu extends Component{
         const classname="Menu-item";
         return (
             <ul>
-                <menuItem class={classname} route={routepath[0]} content={content[0]}/>
-                <menuItem class={classname} route={routepath[0]} content={content[0]}/>
-                <menuItem class={classname} route={routepath[0]} content={content[0]}/>
-                <menuItem class={classname} route={routepath[0]} content={content[0]}/>
+                <MenuItem class={classname} route={routepath[0]} content={content[0]}/>
+                <MenuItem class={classname} route={routepath[0]} content={content[0]}/>
+                <MenuItem class={classname} route={routepath[0]} content={content[0]}/>
+                <MenuItem class={classname} route={routepath[0]} content={content[0]}/>
             </ul>
         );
     }
