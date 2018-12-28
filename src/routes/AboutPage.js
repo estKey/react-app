@@ -1,14 +1,16 @@
 import React from 'react'
+import {randSentence} from "../components/dashboard/mock/MockContent";
 
+const about_content = randSentence();
 function AboutPage() {
+
     return (
-        <div id="About" style={{display:"inline-block"}}>
+        <div id="About" style={{display:"block",height:"100%"}}>
+            <span className="-row-spaced"/>
             <h1 className=" ">Yay! Welcome to About!</h1>
-            <div className=" " />
-            <ul className=" ">
-                <li>To get started, edit <code>src/index.js</code> and save to reload.</li>
-                <li><a href="https://github.com/dvajs/dva-docs/blob/master/v1/en-us/getting-started.md">Getting Started</a></li>
-            </ul>
+            <div>
+                <p>{about_content}</p>
+            </div>
         </div>
     );
 }

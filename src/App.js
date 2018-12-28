@@ -20,6 +20,7 @@ class App extends Component {
                 <header className="Nav-panel" style={{display:"block"}}>
                     <Navbar/>
                 </header>
+                <span className="-row-spaced"/>
                 <div className="App" style={{display:"block"}}>
                     <Switch>
                         <Route path="/" exact component={IndexPage} />

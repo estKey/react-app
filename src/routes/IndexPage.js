@@ -20,7 +20,6 @@ export default function IndexPage(){
     };
 
     return (
-        <body style={{display:"block"}}>
         <div id="Index" style={{display:"block",height:"100%"}}>
             <Layout style={{height:"100%"}}>
                 <Header style={{height:"100%"}} className="App-header">
@@ -64,7 +63,6 @@ export default function IndexPage(){
                 </section>
             </Layout>
         </div>
-        </body>
     );
 
 }

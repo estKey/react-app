@@ -3,6 +3,14 @@
     color: gainsboro;
     background-color: #282c34;
 }
+.contact {
+    color: gainsboro;
+    display: inline;
+    width: 100%;
+    height: 2vmax;
+    align-content: center;
+    text-align: center;
+}
 .media {
     display: inline;
     width: 100%;

@@ -14,7 +14,7 @@ class Navbar extends Component{
                 <div className="container">
                     <section className="banner">
                         <NavLink to="/about" activeClassName="NavLink-active">
-                            <img className="App-logo" alt="logo" title="EazyTrip Logo" src={logo}/>
+                            <img className="App-logo media-logo" alt="logo" title="EazyTrip Logo" src={logo}/>
                         </NavLink>
                         <NavLink to="/" activeClassName="NavLink-active">
                         <span className="title" title="EazyTrip Title">

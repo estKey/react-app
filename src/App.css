@@ -49,6 +49,9 @@ html,body,div{
 .header-content {
   width: 100%;
 }
+.-row-spaced {
+  min-height: 7.2vmax;
+}
 .spinner {
 
   animation: Loading-spin infinite 20s linear;
