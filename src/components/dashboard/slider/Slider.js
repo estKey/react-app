@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Carousel} from 'react-bootstrap'
+
 import './Slider.css'
 import {randSentence} from "../mock/MockContent";
 
@@ -34,7 +35,7 @@ class Slider extends Component{
             label[3],
         ];
         return (
-            <div id="slider-wrapper" className=" ">
+            <div id="Slider" className="slider-wrapper">
                 <Carousel pauseOnHover={true}>
                     <Carousel.Item>
                         <div className="img-wrapper">

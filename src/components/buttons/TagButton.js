@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
 
 import './Buttons.css'
 
@@ -22,9 +23,10 @@ class TagButton extends Component {
             taggedText: '取消',
             untaggedText: '收藏'
         };
+        const tag = [ "👍","💕"];
         return (
             <button onClick={this.handleClickOnLikeButton.bind(this)}>
-                {this.state.isTagged ? contexts.taggedText : contexts.untaggedText} 👍
+                {this.state.isTagged ? contexts.taggedText : contexts.untaggedText}{tag[1]}
             </button>
         )
     }

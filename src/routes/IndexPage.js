@@ -15,9 +15,9 @@ const {
 let mockcontent= randSentence(2);
 const title = "EazyTrip";
 export default function IndexPage(){
-    function scrolltoId(id) {
+    const scrolltoId = (id) => {
         document.getElementById(id).scrollIntoView()
-    }
+    };
 
     return (
         <body>

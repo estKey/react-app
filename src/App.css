@@ -39,6 +39,11 @@ html,body,div{
 .App-link {
   color: #61dafb;
 }
+.Nav-panel {
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
 .header-content {
   width: 100%;
 }

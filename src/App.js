@@ -17,9 +17,9 @@ class App extends Component {
     return (
         <Router>
             <body>
-            <section className="Nav-panel">
+            <header className="Nav-panel">
                 <Navbar/>
-            </section>
+            </header>
             <div className="App">
                 <Switch>
                     <Route path="/" exact component={IndexPage} />
