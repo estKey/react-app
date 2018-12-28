@@ -3,11 +3,10 @@ import {NavLink, Route} from "react-router-dom";
 import {Layout} from 'antd';
 
 import FooterContent from "../components/layout/footer/FooterContent";
-import TagButton from "../components/buttons/TagButton";
+import TagButton from "../components/button/TagButton";
 import {randSentence} from "../components/dashboard/mock/MockContent";
 import AboutPage from "./AboutPage";
 import Slider from "../components/dashboard/slider/Slider";
-import Navbar from "../components/layout/navbar/Navbar";
 
 const {
     Header, Footer, Sider, Content,
@@ -21,11 +20,8 @@ export default function IndexPage(){
     };
 
     return (
-        <body>
-        <header className="Nav-panel">
-            <Navbar/>
-        </header>
-        <div id="Index" style={{height:"100%",display:"block"}}>
+        <body style={{display:"block"}}>
+        <div id="Index" style={{display:"block",height:"100%"}}>
             <Layout style={{height:"100%"}}>
                 <Header style={{height:"100%"}} className="App-header">
                     <div className="App-header header-content">

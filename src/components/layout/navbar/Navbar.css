@@ -1,4 +1,5 @@
 #navbar-wrapper {
+    z-index:999;  /*fixed in top level*/
     top: 0;
     min-height: max-content;
     width: 100%;
@@ -10,7 +11,6 @@
 
 .banner {
     left: 0;
-    float: left;
     position: fixed;
     text-align-all: center;
     font-weight: bolder;
@@ -19,13 +19,15 @@
 }
 
 .App-logo {
-    height: 7vmax;
-    width: 7vmax;
+    height: auto;
+    width: auto;
+    display: inline;
 }
 
 .title {
     height: inherit;
     text-align: center;
+    display: inline;
 }
 
 .NavLink-active{

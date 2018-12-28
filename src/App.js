@@ -16,22 +16,22 @@ class App extends Component {
   render() {
     return (
         <Router>
-            <body>
-            <header className="Nav-panel">
-                <Navbar/>
-            </header>
-            <div className="App">
-                <Switch>
-                    <Route path="/" exact component={IndexPage} />
-                    <Route path="/404" exact component={NotFoundPage} />
-                    <Route path="/user" exact component={UserPage} />
-                    <Route path="/user/login" exact component={LoginPage} />
-                    <Route path="/user/register" exact component={RegisterPage} />
-                    <Route path="/about" exact component={AboutPage} />
-                    <Redirect from="*" to="/404/" />
-                </Switch>
+            <div>
+                <header className="Nav-panel" style={{display:"block"}}>
+                    <Navbar/>
+                </header>
+                <div className="App" style={{display:"block"}}>
+                    <Switch>
+                        <Route path="/" exact component={IndexPage} />
+                        <Route path="/404" exact component={NotFoundPage} />
+                        <Route path="/user" exact component={UserPage} />
+                        <Route path="/user/login" exact component={LoginPage} />
+                        <Route path="/user/register" exact component={RegisterPage} />
+                        <Route path="/about" exact component={AboutPage} />
+                        <Redirect from="*" to="/404/" />
+                    </Switch>
+                </div>
             </div>
-            </body>
         </Router>
     );
   }
