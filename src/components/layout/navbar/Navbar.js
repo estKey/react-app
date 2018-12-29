@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 
 import './Navbar.css'
 import logo from '../../../logo.svg';
-import Menu from "../../menu/Menu";
+import Menu from "../menu/Menu";
 
 
 class Navbar extends Component{
@@ -11,21 +11,22 @@ class Navbar extends Component{
     render() {
         return (
             <nav id="navbar-wrapper">
-                <div className="container">
-                    <section className="banner">
-                        <NavLink to="/about" activeClassName="NavLink-active">
-                            <img className="App-logo media-logo" alt="logo" title="EazyTrip Logo" src={logo}/>
-                        </NavLink>
-                        <NavLink to="/" activeClassName="NavLink-active">
+                <section className="banner">
+                    <NavLink to="/about" activeClassName="NavLink-active">
+                        <img className="App-logo media-logo" alt="logo" title="EazyTrip Logo" src={logo}/>
+                    </NavLink>
+                    <NavLink to="/" activeClassName="NavLink-active">
                         <span className="title" title="EazyTrip Title">
                             EazyTrip
                         </span>
-                        </NavLink>
+                    </NavLink>
+                    <section className="spacer"/>
+                    <section className="container spacer">
+                        <div className="menu-wrapper navigation-items">
+                            <Menu/>
+                        </div>
                     </section>
-                    <div className="menu-wrapper">
-                        <Menu/>
-                    </div>
-                </div>
+                </section>
             </nav>
         );
     }

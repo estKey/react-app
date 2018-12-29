@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import '../layout/navbar/Navbar.css'
+import '../navbar/Navbar.css'
 
 
 class MenuItem extends React.Component{
