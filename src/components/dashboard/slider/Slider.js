@@ -79,7 +79,7 @@ class Slider extends Component{
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>
-                </Carousel>;
+                </Carousel>
             </div>
         );
     }

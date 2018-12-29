@@ -1,5 +1,7 @@
 #footer-wrapper{
     bottom: 0;
+    z-index: 999;
+    display: block;
     color: gainsboro;
     background-color: #282c34;
 }

@@ -11,6 +11,7 @@ import AboutPage from "./routes/AboutPage";
 import UserPage from "./routes/users/UserPage";
 //Components
 import Navbar from "./components/layout/navbar/Navbar";
+import FooterTab from "./components/layout/footer/FooterTab";
 
 class App extends Component {
   render() {
@@ -21,7 +22,7 @@ class App extends Component {
                     <Navbar/>
                 </header>
                 <span className="-row-spaced"/>
-                <div className="App" style={{display:"block"}}>
+                <div className="App App-body" style={{display:"block"}}>
                     <Switch>
                         <Route path="/" exact component={IndexPage} />
                         <Route path="/404" exact component={NotFoundPage} />
@@ -32,6 +33,10 @@ class App extends Component {
                         <Redirect from="*" to="/404/" />
                     </Switch>
                 </div>
+                <span className="-row-spaced" />
+                <footer className="App-footer" style={{display:"block"}}>
+                    <FooterTab/>
+                </footer>
             </div>
         </Router>
     );

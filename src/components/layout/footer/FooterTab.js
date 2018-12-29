@@ -9,7 +9,7 @@ let year = sysDate.getFullYear();
 const phone_number = "000-000-0000";
 const email_addr = "Eazytrip@outlook.com";
 
-class FooterContent extends Component{
+class FooterTab extends Component{
 
     render() {
         return (
@@ -36,4 +36,4 @@ class FooterContent extends Component{
     }
 }
 
-export default FooterContent;
+export default FooterTab;

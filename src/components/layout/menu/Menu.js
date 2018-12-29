@@ -8,7 +8,8 @@ const route_path = [
     "/",
     "/",
     "/",
-    "/",
+    "/user/login",
+    "/user/register",
 ];
 const item_name_zh = [
     "出游需求",
