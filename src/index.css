@@ -7,23 +7,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-a {
-  color: gainsboro;
-  -webkit-transition: 0.4s linear;
-  transition: 0.4s linear;
-  text-decoration: blink;
-}
-a:hover {
-  color: #8AC2E3;
-  text-decoration: blink;
-}
-a:visited {
-  background-color: #282c34;
-  -webkit-transition: 0.4s linear;
-  transition: 0.4s linear;
-  text-decoration: blink;
 }

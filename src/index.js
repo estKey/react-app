@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-
+import {Router} from "react-router-dom";
 import './index.css';
+import * as serviceWorker from './serviceWorker';
+import App from "./containers/App";
+import { Provider } from 'react-redux';
+import Intl from './components/Intl';
+import history from './utils/history'
+import store from "./store";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const root = document.getElementById('root');
+ReactDOM.render(
+    <Provider store={store}>
+        <Intl>
+            <Router history={history}>
+                <App />
+            </Router>
+        </Intl>
+    </Provider>
+    , root);
 
-//Register serviceworker
-serviceWorker.unregister();
-//serviceWorker.register();
+serviceWorker.register();
