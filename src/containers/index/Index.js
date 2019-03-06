@@ -34,7 +34,7 @@ class Index extends Component {
                     </p>
                     <button onClick={() => this.changeLanguage()}>{locale === 'zh' ? '英文' : 'Chinese'}</button>
                 </header>
-            </div>
+            </Wrapper>
         );
     }
 }
