@@ -9,6 +9,7 @@ import Text from "../../components/Text";
 const Wrapper = styled.div`
   justify-content: center;
 `;
+
 class Index extends Component {
     changeLanguage() {
         let lang = this.props.locale;
