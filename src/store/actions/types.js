@@ -1,2 +1,2 @@
-export const DEMO = 'DEMO';
+// locale
 export const CHANGE_LANGUAGE = 'CHANGE_LANGUAGE';

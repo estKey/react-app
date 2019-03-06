@@ -6,7 +6,7 @@ class Text extends Component {
         return(
             <FormattedMessage
                 id = {this.props.id}
-                values={this.props.values}
+                values = {this.props.values}
             />
         )
     }
