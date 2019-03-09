@@ -1,10 +1,11 @@
-import React, {Component, Fragment} from 'react';
-import logo from '../../assets/logos/logo.svg';
-import './Index.css';
-import actions from '../../store/actions/index.js';
-import { connect } from 'react-redux';
-import styled from 'styled-components';
+import React, {Component, Fragment} from "react";
+import logo from "../../assets/logos/logo.svg";
+import actions from "../../store/actions/index.js";
+import { connect } from "react-redux";
+import styled from "styled-components";
 import Text from "../../components/Text";
+import {withRouter} from "react-router-dom";
+import "./index.css";
 
 const Wrapper = styled.div`
   text-align: center;
