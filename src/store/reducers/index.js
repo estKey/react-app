@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import root from './root';
+import rootReducer from './root';
 
 export default combineReducers({
-  root
+  root: rootReducer
 })
