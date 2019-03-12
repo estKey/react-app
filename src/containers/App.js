@@ -1,20 +1,14 @@
-import React, { Component } from 'react';
-import './App.css';
-import {Redirect, Route, Switch} from "react-router-dom";
-// Route Pages
-import Index from "./Index";
-import NotFound from "./NotFound";
+import React, {Component, Fragment} from 'react';
 
-class App extends Component {
+class App extends Component{
+    hello = "hello world Art!";
     render() {
-        return (
-            <Switch>
-                <Route path="/" exact component={Index} />
-                <Route path="/404" exact component={NotFound} />
-                <Redirect from="*" to="/404" />
-            </Switch>
-        );
+        return(
+            <Fragment>
+                <div>{this.hello}</div>
+            </Fragment>
+        )
     }
 }
 
-export default App;
+export default App
