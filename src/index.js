@@ -9,12 +9,11 @@ import { PersistGate } from 'redux-persist/integration/react'
 import Intl from './components/Intl';
 import history from './utils/history'
 import {store, persistor} from './store';
-import Loading from "./components/Loading";
 
 const root = document.getElementById('root');
 ReactDOM.render(
     <Provider store={store}>
-        <PersistGate loading={<Loading />} persistor={persistor}>
+        <PersistGate loading={null} persistor={persistor}>
             <Router history={history}>
                 <Intl>
                     <App />

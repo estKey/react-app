@@ -4,8 +4,8 @@ import actions from "../../store/actions/index.js";
 import { connect } from "react-redux";
 import styled from "styled-components";
 import Text from "../../components/Text";
-import {withRouter} from "react-router-dom";
 import "./index.css";
+import {NavLink} from "react-router-dom";
 
 const Wrapper = styled.div`
   text-align: center;
@@ -33,9 +33,10 @@ class Index extends Component {
                         <p className="App-intro">
                             <Text
                                 id="name"
-                                values={{ name: <b>{'Art'}</b> }}
+                                values={{ name: <b>{'童志远'}</b> }}
                             />
                         </p>
+                        <NavLink to={"/404"}>404</NavLink><br/>
                         <button onClick={() => this.changeLanguage()}>{locale === 'zh' ? '英文' : 'Chinese'}</button>
                     </header>
                 </Wrapper>
@@ -44,10 +45,10 @@ class Index extends Component {
     }
 }
 
-const mapStateToProps = (state, ownProps) => ({
+const mapStateToProps = (state, ...ownProps) => ({
     locale: state.root.language,
 });
-const mapDispatchToProps = (dispatch, ownProps) => ({
+const mapDispatchToProps = (dispatch, ...ownProps) => ({
     changeLanguage: (val) => dispatch(actions.changeLanguage(val))
 });
 export default connect(

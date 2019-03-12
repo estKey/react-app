@@ -1,5 +1,4 @@
 import React, {Fragment} from "react";
-import logo from "../assets/logos/logo.svg";
 import styled from 'styled-components';
 
 const Wrapper = styled.img`
@@ -14,10 +13,10 @@ const Wrapper = styled.img`
 `;
 
 // Default Loading
-const Loading = (img = logo) =>(
-    <Fragment>
-        <Wrapper src={img} alt={"Loading..."}/>
-    </Fragment>
+const Spinner = (img, text, speed) => (
+        <Fragment>
+            <Wrapper src={img} alt={text} style={{"animation": "spin infinite " + {speed} + "s linear;"}} />
+        </Fragment>
 );
 
-export default Loading
+export default Spinner
