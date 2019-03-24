@@ -1,12 +1,22 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./containers/App";
+import React from 'react';
+import { render } from 'react-dom';
+import { AppContainer } from 'react-hot-loader';
+import 'babel-polyfill';
+import App from './app/App';
 
-import * as serviceWorker from "./utils/serviceWorker";
-// render
-ReactDOM.render(
-    <App />
-    , document.getElementById('app')
-);
-// register serviceWorker
-serviceWorker.register();
+const renderDom = Component => {
+    render(
+        <AppContainer>
+            <Component />
+        </AppContainer>,
+        document.getElementById('app')
+    );
+};
+renderDom(App);
+
+if (module.hot) {
+    module.hot.accept('./app/App', () => {
+        const App = require('./app/App').default;
+        renderDom(App);
+    })
+}
