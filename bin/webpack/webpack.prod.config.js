@@ -11,7 +11,7 @@ module.exports = merge(webpackConfig, {
   entry: [
     'babel-polyfill',
     path.resolve(__dirname, '../../src/index.prod.js'),
-  ], // 指定入口文件，程序从这里开始编译,__dirname当前目录, ../表示上一级目录, ./同级目录
+  ],
   plugins: [
     new UglifyJSPlugin({
       uglifyOptions: {
