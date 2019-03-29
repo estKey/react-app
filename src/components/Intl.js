@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { addLocaleData, IntlProvider } from 'react-intl';
 import { connect } from 'react-redux';
-import zh_CN from "../assets/languages/zh_CN";
-import en_US from "../assets/languages/en_US";
 import zh from 'react-intl/locale-data/zh';
 import en from 'react-intl/locale-data/en';
+import zh_CN from "../assets/languages/zh_CN";
+import en_US from "../assets/languages/en_US";
 
 addLocaleData([...zh,...en]);
 

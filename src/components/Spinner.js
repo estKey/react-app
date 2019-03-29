@@ -7,15 +7,15 @@ const Wrapper = styled.img`
   height: 30vmax;
   
   @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from { transform: rotate(0deg) }
+  to { transform: rotate(360deg) }
 }
 `;
 
 // Default Loading
-const Spinner = (img, text, speed) => (
+const Spinner = (props) => (
         <Fragment>
-            <Wrapper src={img} alt={text} style={{"animation": "spin infinite " + {speed} + "s linear;"}} />
+            <Wrapper src={props.img} alt={props.text} style={{"animation": "spin infinite " + {props.speed} + "s linear"}} />
         </Fragment>
 );
 
